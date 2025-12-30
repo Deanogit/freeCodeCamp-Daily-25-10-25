@@ -19,10 +19,13 @@ function complementaryDNA(strand) {
 
   const arr = strand.split('');
   console.log(arr);
-  arr.map((x) => {
+  const switched = arr.map((x) => {
     // if ref.includes(x) {
     // swap the key for value
     //}
+    return ref[x];
   });
-  return strand;
+  console.log(switched);
+  return switched.join('');
+  //return strand;
 }
